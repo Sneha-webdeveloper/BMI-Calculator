@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container border border-dark mt-5  rounded shadow w-75 text-center">
+
+    <div class="nav rounded">
+        <img src="./images/bmi.svg" alt="" class="ms-2">
+        <span class="fs-1  mt-3 ms-3">BMI Calculator <br><span class="fs-3 mb-2">Body Mass Index</span></span>
+        
+    </div>
+
+<div class="row ">
+            
+<div class="col-md-5 col-xs col text-start ms-2 fs-4">
+                    <div class="mt-4 p-3">
+                        <label for="" class="ms-2">GENDER</label><br>
+                
+                        <input type="radio" id="male" name="Gender">
+                        <label for="male">male</label>
+                        <input type="radio" id="female" name="Gender">
+                        <label for="female">female</label><br>
+    
+                    </div>
+                    <div class="mt-4 p-3 fs-4">
+                    <label for="">Age <span class="text-center fs-5">(2yrs and above)</span></label>
+                    <input id="age" type="text" class="form-control me-2 mt-2" placeholder="YOUR AGE IN Yrs">
+                    </div>
+</div> 
+<div class="col-md-5 col-xs-12 text-start ms-2 fs-4">
+    <div class="mt-4 p-3 fs-4">
+        <label for="">Weight</label>
+        <input id="weight" type="text" class="form-control me-2 mt-2" placeholder="Your weight in Kgs">
+        </div>
+        <div class="mt-4 p-3 fs-4">
+            <label for="">Height</label>
+            <input id="height" type="text" class="form-control me-2 mt-2" placeholder="Your height in cms">
+            </div>
+
+</div>
+
+    
+</div>  
+
+<button onclick="calculateBMI()" type="button"> Calculate</button>
+<button onclick="allclear()" type="button" class="ms-3 btn btn-dark px-5"> Reset</button>
+
+<div  id="note" class=" mb-5">
+    <h3 class="my-3">YOUR BMI IS</h3>
+    <div id="result"></div>
+    <img src="./images/bmi-meter.png" alt="" height="250px" width="100%">
+
+   <p class="fw-bold text-secondary my-3 pb-2"> Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</p>
+
+</div>       
+
+   
+   </div>
+</body>
+
+<script src="./script.js"></script>
+</html>
