@@ -9,9 +9,11 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./style.css">
+
+    
 </head>
 <body>
-   <div class="container border border-dark mt-5  rounded shadow w-75 text-center">
+   <div class="container border border-dark mt-5  rounded shadow w-75 text-center ">
 
     <div class="nav rounded">
         <img src="./images/bmi.svg" alt="" class="ms-2">
@@ -21,7 +23,7 @@
 
 <div class="row ">
             
-<div class="col-md-5 col-xs col text-start ms-2 fs-4">
+<div class="col-md-3 col-xs col text-start ms-2 fs-4">
                     <div class="mt-4 p-3">
                         <label for="" class="ms-2">GENDER</label><br>
                 
@@ -36,7 +38,7 @@
                     <input id="age" type="text" class="form-control me-2 mt-2" placeholder="YOUR AGE IN Yrs">
                     </div>
 </div> 
-<div class="col-md-5 col-xs-12 text-start ms-2 fs-4">
+<div class="col-md-4 col-sm-12 text-start ms-2 fs-4">
     <div class="mt-4 p-3 fs-4">
         <label for="">Weight</label>
         <input id="weight" type="text" class="form-control me-2 mt-2" placeholder="Your weight in Kgs">
@@ -45,23 +47,28 @@
             <label for="">Height</label>
             <input id="height" type="text" class="form-control me-2 mt-2" placeholder="Your height in cms">
             </div>
+                 
+            <button onclick="calculateBMI()" type="button"> Calculate</button>
+            <button onclick="allclear()" type="button" class="ms-3 btn btn-dark px-5"> Reset</button>
+              
+           
+        
+
+</div>
+<div class="col-lg-4 col-sm-12 col-md-12 mt-5">
+    <img src="./images/bmi.png" alt="" height="250px" width="100%" style="position: relative;">
+    <img src="./images/arrow.png" id="arrow" alt="" style="position: absolute; height: 119px;right:397px; margin: auto;top: 413px; width: 108px;">
+
+   <p class="fw-bold text-secondary my-2"> Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</p>
 
 </div>
 
     
 </div>  
-
-<button onclick="calculateBMI()" type="button"> Calculate</button>
-<button onclick="allclear()" type="button" class="ms-3 btn btn-dark px-5"> Reset</button>
-
-<div  id="note" class=" mb-5">
-    <h3 class="my-3">YOUR BMI IS</h3>
+<div  id="note" class="row mb-5">
+    <h3 class="text-danger fw-bold">YOUR BMI IS</h3>
     <div id="result"></div>
-    <img src="./images/bmi-meter.png" alt="" height="250px" width="100%">
-
-   <p class="fw-bold text-secondary my-3 pb-2"> Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</p>
-
-</div>       
+</div>  
 
    
    </div>
