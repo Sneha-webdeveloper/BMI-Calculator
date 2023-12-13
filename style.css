@@ -40,7 +40,10 @@ label{
     text-align: center;
     padding-top: 20px;
 }
-
+/* ------------------accent color --for radio and check box */
+input{
+    accent-color: red ;
+}
 button{
     background-color: rgb(249, 198, 103);
     padding: 10px 20px;
